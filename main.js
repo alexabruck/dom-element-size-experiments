@@ -1,7 +1,4 @@
-let originalDiv;
-
 document.addEventListener("DOMContentLoaded", function() {
-  originalDiv = document.getElementById("original-div");
   createDiv1();
   createDiv2();
   createDiv3();
@@ -11,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
 getBoundingClientRect & box-sizing: border-box
 */
 function createDiv1() {
+  const originalDiv = document.getElementById("original-div-1");
   const gBCR = originalDiv.getBoundingClientRect();
   const element = document.getElementById("repl-div-1");
   element.style.boxSizing = "border-box";
@@ -24,6 +22,7 @@ function createDiv1() {
 offsetTop/Left & offsetHeight/Width & box-sizing: border-box
 */
 function createDiv2() {
+  const originalDiv = document.getElementById("original-div-2");
   const element = document.getElementById("repl-div-2");
   const {
     offsetWidth: width,
@@ -42,6 +41,7 @@ function createDiv2() {
 offsetTop/Left + clientHeight/Width
 */
 function createDiv3() {
+  const originalDiv = document.getElementById("original-div-3");
   const element = document.getElementById("repl-div-3");
   const width = originalDiv.clientWidth;
   const height = originalDiv.clientHeight;

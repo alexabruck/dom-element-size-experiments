@@ -10,12 +10,34 @@
   </head>
   <body>
     <div class="legend">
-      <p class="example-1">Example 1</p>
-      <p class="example-2">Example 2</p>
-      <p class="example-3">Example 3</p>
+      <p class="example-1">
+        <strong>Solution 1: </strong> <code>getBoundingClientRect</code> &
+        <code>box-sizing: border-box</code>
+      </p>
+      <p class="example-2">
+        <strong>Solution 2: </strong><code>offsetTop/Left</code> &
+        <code>offsetHeight/Width</code> &
+        <code>box-sizing: border-box</code>
+      </p>
+      <p class="example-3">
+        <strong>Example 3: </strong><code>offsetTop/Left</code> &
+        <code>clientHeight/Width</code>
+      </p>
+      <p>
+        This will break once a parent of either original-div or replicate-div
+        has position:relative. If it's a common parent, it's okay.
+      </p>
     </div>
     <div class="content">
-      <div id="original-div">
+      <div class="original-div" id="original-div-1">
+        Music reminds us that the mind is more than a calculator. We are
+        resonant bodies as much as representing machines.
+      </div>
+      <div class="original-div" id="original-div-2">
+        Music reminds us that the mind is more than a calculator. We are
+        resonant bodies as much as representing machines.
+      </div>
+      <div class="original-div" id="original-div-3">
         Music reminds us that the mind is more than a calculator. We are
         resonant bodies as much as representing machines.
       </div>
