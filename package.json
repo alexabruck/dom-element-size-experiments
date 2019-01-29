@@ -1,0 +1,17 @@
+{
+  "name": "dom-element-size-experiments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.16.1"
+  }
+}

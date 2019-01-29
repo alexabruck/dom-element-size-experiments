@@ -1,0 +1,72 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+div.legend {
+  height: 30%;
+  flex: 1;
+}
+
+div.content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#original-div {
+  width: 300px;
+  padding: 15px;
+  border: 4px solid gold;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+div.repl-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+div#repl-div-1 {
+  border: 4px solid teal;
+  animation: foo 2.5s;
+}
+
+div#repl-div-2 {
+  border: 4px solid rebeccapurple;
+  animation: foo 2.5s;
+  animation-delay: 3s;
+}
+
+div#repl-div-3 {
+  border: 4px solid red;
+  animation: foo 2.5s;
+  animation-delay: 6s;
+}
+
+.example-1 {
+  color: teal;
+}
+.example-2 {
+  color: rebeccapurple;
+}
+.example-3 {
+  color: red;
+}
+
+@keyframes foo {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+}
