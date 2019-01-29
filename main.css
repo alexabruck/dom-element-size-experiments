@@ -25,29 +25,49 @@ div.content {
 .original-div {
   width: 200px;
   padding: 15px;
-  border: 4px solid gold;
-  box-sizing: border-box;
+  border: 4px solid;
+}
+
+#original-div-1 {
+  background-color: teal;
+  border-color: teal;
+}
+
+#original-div-2 {
+  background-color: rebeccapurple;
+  border-color: rebeccapurple;
+}
+
+#original-div-3 {
+  background-color: coral;
+  border-color: coral;
 }
 
 div.repl-div {
   position: absolute;
   top: 0;
   left: 0;
+  transition-property: top, left;
+  transition-duration: 1s;
+  mix-blend-mode: difference;
 }
 
 div#repl-div-1 {
   border: 4px solid teal;
+  background-color: teal;
   /*animation: foo 2.5s; */
 }
 
 div#repl-div-2 {
   border: 4px solid rebeccapurple;
+  background-color: rebeccapurple;
   /*animation: foo 2.5s;*/
   animation-delay: 3s;
 }
 
 div#repl-div-3 {
-  border: 4px solid red;
+  border: 4px solid coral;
+  background-color: coral;
   /*animation: foo 2.5s;*/
   animation-delay: 6s;
 }
@@ -59,7 +79,7 @@ div#repl-div-3 {
   color: rebeccapurple;
 }
 .example-3 {
-  color: red;
+  color: coral;
 }
 
 @keyframes foo {
